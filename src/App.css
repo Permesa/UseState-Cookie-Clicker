@@ -1,0 +1,152 @@
+@font-face {
+  font-family: TitleFont;
+  src: url(art/JosefinSans-Regular.ttf);
+}
+
+:root {
+  --border: rgb(253, 182, 182);
+}
+
+*{
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  cursor: url(art/Pointer.png), auto;
+}
+
+
+
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  background-image: url(art/ezgif-1-cdf5709486.gif);
+  background-size: contain;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.AppInner{
+  height: 90%;
+  width: 70%;
+  margin: 0%;
+  padding: 0%;
+  background-color: rgba(242, 211, 211, 0.95);
+  outline: solid var(--border) 6px;
+}
+
+#Title {
+  color: white;
+  padding-top: 1.5vh;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  text-align: center;
+  font-size: 80px;
+  font-family: TitleFont;
+  background-color: rgba(255, 0, 0, 0.5);
+  outline: 5px var(--border) solid;
+}
+
+.GameScreen {
+  height: 84%;
+}
+
+#Footer {
+  font-family: TitleFont;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 5%;
+  color: white;
+  text-decoration: underline;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.CookieDisplay {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.UpgradeDisplay {
+  width: 50%;
+  outline: 5px var(--border) solid;
+  overflow-y: auto;
+}
+
+.DisplayCont {
+  color: rgba(255, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  font-family: TitleFont;
+  outline: 5px var(--border) solid;
+}
+
+#CookieText {
+  padding-top: 10vh;
+  font-size: 90px;
+}
+
+#CookieImage {
+  width: 20vw;
+}
+
+#TrackerText {
+  padding-top: 1vh;
+  font-size: 30px;
+}
+
+#CookieImage:hover {
+  cursor: url(./art/Click.png), auto;
+}
+
+#UpgradeText {
+  padding-top: 1vh;
+  font-size: 25px;
+}
+
+#ButtonDisplay {
+  color: white;
+  margin: 1vw;
+  outline: .2vw solid var(--border);
+  background-color: rgba(255, 0, 0, .2);
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#UpgradeImage {
+  height: 10vh;
+}
+
+#ButtonImage {
+  display: flex;
+  flex-direction: column;
+}
+
+#UpgradeCont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#UpgradeTextSmall {
+  padding-top: 1vh;
+  font-size: 20px;
+}
+
+#ButtonTitle {
+  font-size: 50px;
+}
